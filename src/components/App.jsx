@@ -12,10 +12,29 @@ export const App = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <ul className="countries-list">
       {countries.map(country => (
-        <div key={country.name.common}>{country.flag}</div>
+        <li key={country.name.common} className="countries-item">
+          <img
+            src={country.flags.svg}
+            alt=""
+            width="200px"
+            className="country-flag"
+          />
+          <div className="description">
+            <h3>{country.name.common}</h3>
+            <p>
+              Population: <span>{country.population.toLocaleString()}</span>
+            </p>
+            <p>
+              Region: <span>{country.region}</span>
+            </p>
+            <p>
+              Capital: <span>{country.capital}</span>
+            </p>
+          </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
