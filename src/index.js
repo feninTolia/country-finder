@@ -5,11 +5,14 @@ import store from 'redux/store';
 import { Provider } from 'react-redux';
 
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <BrowserRouter basename='/country-finder'>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
