@@ -1,0 +1,27 @@
+.countryItem {
+  margin-top: 100px;
+  padding: 10px 50px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+.countryFlag {
+  background-color: none;
+  width: 50%;
+  object-fit: contain;
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+}
+
+.description {
+  width: 40%;
+  font-size: 18px;
+}
+
+.descHeader {
+  font-weight: bolder;
+}
+
+.descContent {
+  font-weight: normal;
+}

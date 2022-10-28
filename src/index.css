@@ -22,7 +22,7 @@ code {
 
 img {
   display: block;
-  min-width: 100%;
+  /* min-width: 100%; */
 }
 
 .countries-list {
